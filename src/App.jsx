@@ -1,11 +1,13 @@
+
 import './App.css'
-import ProjectUi from './components/ProjectUi/ProjectUi'
+import Search from './components/Search/Search'
 
 function App() {
 
+
   return (
     <>
-    <ProjectUi />
+    <Search/>
     </>
   )
 }
