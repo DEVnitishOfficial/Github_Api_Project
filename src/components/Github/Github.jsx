@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import ProjectUi from '../ProjectUi/ProjectUi';
 
 function Github({userName}) {
+
+
   const [data, setData] = useState([]);
 
  
@@ -12,9 +14,10 @@ function Github({userName}) {
         return
       }
       try {
+
           const response = await axios.get(`https://api.github.com/users/${userName}`,{
             headers:{
-              Authorization: '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',
+              Authorization: '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'
             }
           });
           setData(response.data);
